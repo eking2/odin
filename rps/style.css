@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.score {
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.board {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.match {
+    display: flex;
+    justify-content: center;
+}
+
+.display {
+    font-size: 35px;
+   margin: 5px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matchText {
+    visibility: hidden;
+}
+
+#reset {
+    padding: 5px 5px;
+    font-size: 15px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    width: 120px;
+    margin-bottom: 20px;
+}
