@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+}
+
+:root {
+    --side: 16;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cell {
+    background-color: white;
+    border: 1px solid rgb(215, 219, 224);
+    transition: background-color 0.2s ease;
+}
+
+.grid {
+    height: 75vh;
+    width: 75vh;
+    margin: auto;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(var(--side), 1fr);
+    grid-template-rows: repeat(var(--side, 1fr))
+}
+
+.controls {
+    margin-tp: 5px;
+}
+
+button {
+    font-size: 20px;
+    width: 100px;
+    margin-left: 10px;
+}
