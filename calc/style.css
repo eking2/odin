@@ -1,0 +1,169 @@
+:root {
+    font-family: Arial;
+
+    --num-color: #e7e6e4;
+    --screen-color: #f5f5f5;
+    --mod-color: #51d979;
+    --op-color: #ebb818;
+    --calc-color: #7498bd;
+}
+
+.content {
+    height: 80vh;
+    margin: 0 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.calculator {
+    width: 400px;
+    height: 550px;
+    background-color: var(--calc-color);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.screen {
+    display: grid;
+    width: 400px;
+    height: 110px;
+    justify-items: end;
+    background-color: var(--screen-color);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.screen-current {
+    font-size: 60px;
+    padding-right: 12px;
+    align-self: end;
+}
+
+.screen-history {
+    align-self: start;
+    padding-right: 12px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+
+.buttons {
+    display: grid;
+    gap: 4px;
+    height: 420px;
+    grid-template:
+        'ac del percent div'
+        'seven eight nine mult'
+        'four five six minus'
+        'one two three plus'
+        'zero deci pm equal';
+}
+
+button {
+    cursor: pointer;
+    border-radius: 3px;
+    transition-duration: 0.2s;
+    border: none;
+    font-size: 28px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 1;
+}
+
+.op {
+    background-color: var(--op-color);
+}
+
+.num {
+    background-color: var(--num-color);
+}
+
+.mod {
+    background-color: var(--mod-color);
+}
+
+#top {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* position buttons on grid */
+#n0 {
+    grid-area: zero;
+}
+
+#n1 {
+    grid-area: one;
+}
+
+#n2 {
+    grid-area: two;
+}
+
+#n3 {
+    grid-area: three;
+}
+
+#n4 {
+    grid-area: four;
+}
+
+#n5 {
+    grid-area: five;
+}
+
+#n6 {
+    grid-area: six;
+}
+
+#n7 {
+    grid-area: seven;
+}
+
+#n8 {
+    grid-area: eight;
+}
+
+#n9 {
+    grid-area: nine;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#mult {
+    grid-area: mult;
+}
+
+#div {
+    grid-area: div;
+}
+
+#equal {
+    grid-area: equal
+}
+
+#ac {
+    grid-area: ac
+}
+
+#del {
+    grid-area: del
+}
+
+#percent {
+    grid-area:percent
+}
